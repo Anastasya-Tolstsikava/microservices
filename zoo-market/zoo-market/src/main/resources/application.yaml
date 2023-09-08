@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: zoo-market
+  config:
+    import: "optional:configserver:http://localhost:8088"
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
